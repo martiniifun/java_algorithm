@@ -13,8 +13,8 @@ class Solution {
         while (num <= n * n) {  // 최대값을 넘기 전까지 계속
             answer[x][y] = num++;  // (x, y)에 num 넣고 num++
 
-            int nx = x + dx[direction];  // 새로운 x좌표(예정)
-            int ny = y + dy[direction];  // 새로운 y좌표(예정)
+            int nx = x + dx[direction];  // 새로운 x좌표(미리)
+            int ny = y + dy[direction];  // 새로운 y좌표(미리)
 
             // (x, y 각 좌표가 0보다 작거나 n보다 크거나, 이미 값이 있거나 하면)
             if (nx < 0 || nx >= n || ny < 0 || ny >= n || answer[nx][ny] != 0) {
